@@ -27,7 +27,7 @@ html {
 body {
     /* background-color: var(--body-bg);
     background-color: var(--secondary-black); */
-    background: url("../images/universe.jpg") no-repeat center center fixed;
+    background: url("./images/universe.jpg") no-repeat center center fixed;
     /* background: linear-gradient(
             #12263f,
             #1f123f,
