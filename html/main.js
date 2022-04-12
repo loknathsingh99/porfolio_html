@@ -16,7 +16,12 @@ const jupiter = document.querySelector(".jupiter");
 const saturn = document.querySelector(".saturn");
 const neptune = document.querySelector(".neptune");
 
-const rocket = document.querySelector(".rocket");
+const rocket1 = document.querySelector(".rocket1");
+const rocket2 = document.querySelector(".rocket2");
+const rocket3 = document.querySelector(".rocket3");
+const astronaut_thinking = document.querySelector(".astronaut_thinking");
+const astronaut_Floating1 = document.querySelector(".astronaut_Floating1");
+const astronaut_riding = document.querySelector(".astronaut_riding");
 
 if (scrollButton) {
     window.addEventListener("scroll", () => {
@@ -24,6 +29,11 @@ if (scrollButton) {
             scrollButton.style.display = "flex";
         } else {
             scrollButton.style.display = "none";
+        }
+        if (pageYOffset > window.innerHeight * 3) {
+            astronaut_thinking.style.display = "flex";
+        } else {
+            astronaut_thinking.style.display = "none";
         }
         // console.log("y:", pageYOffset);
         // transform: skew(350deg, 354deg);
@@ -71,9 +81,10 @@ if (earth) {
         let t1 = pageYOffset * 0.144 - 200;
         let s1 = "rotate(" + t1 + "deg) translateX(180px)";
         earth.style.transform = s1;
-        let s2 = "rotate(-" + pageYOffset * 0.3 + "deg) translateX(50px)";
+        let s2 =
+            "rotate(-" + (80 + pageYOffset * 0.3) + "deg) translateX(55px)";
 
-        rocket.style.transform = s2;
+        rocket1.style.transform = s2;
     });
 }
 if (mars) {
@@ -89,15 +100,25 @@ if (jupiter) {
         let t1 = pageYOffset * 0.0522 + 20;
         let s1 = "rotate(" + t1 + "deg) translateX(310px)";
         jupiter.style.transform = s1;
-        // sunBeam.style.transformOrigin = "top center";
     });
 }
+// if (rocket3) {
+//     window.addEventListener("scroll", () => {
+//         let t1 = pageYOffset * 0.0522 + 180;
+//         let t2 = 420 - pageYOffset * 0.0892;
+//         let s1 = "rotate(" + t1 + "deg) translateX(" + t2 + "px)";
+//         rocket3.style.transform = s1;
+//     });
+// }
 if (saturn) {
     window.addEventListener("scroll", () => {
         let t1 = pageYOffset * 0.03 - 180;
         let s1 = "rotate(" + t1 + "deg) translateX(400px)";
         saturn.style.transform = s1;
-        // sunBeam.style.transformOrigin = "top center";
+        let s2 =
+            "rotate(-" + (80 + pageYOffset * 0.3) + "deg) translateX(70px)";
+
+        rocket2.style.transform = s2;
     });
 }
 if (neptune) {
@@ -105,7 +126,23 @@ if (neptune) {
         let t1 = pageYOffset * 0.01 - 35;
         let s1 = "rotate(" + t1 + "deg) translateX(500px)";
         neptune.style.transform = s1;
-        // sunBeam.style.transformOrigin = "top center";
+    });
+}
+if (astronaut_Floating1) {
+    window.addEventListener("scroll", () => {
+        let t1 = -900 * pageYOffset * 0.000166 + 200;
+        // let s1 = "rotate(" + t1 + "deg) translateX(500px)";
+        let s1 = "translateY(" + t1 + "px)";
+        astronaut_Floating1.style.transform = s1;
+    });
+}
+if (astronaut_riding) {
+    window.addEventListener("scroll", () => {
+        let t1 = -900 * pageYOffset * 0.000116 + 200;
+        let t2 = 900 * pageYOffset * 0.000166 + -300;
+        // let s1 = "rotate(" + t1 + "deg) translateX(500px)";
+        let s1 = "translateY(" + t1 + "px)  translateX(" + t2 + "px)";
+        astronaut_riding.style.transform = s1;
     });
 }
 hamburegerMenu.addEventListener("click", () => {

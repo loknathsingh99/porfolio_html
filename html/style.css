@@ -281,8 +281,8 @@ p {
     background-color: white;
     cursor: pointer;
     border-radius: 6px;
-    display: flex;
-    /* display: none; */
+    /* display: flex; */
+    display: none;
     align-items: center;
     justify-content: center;
     box-shadow: 0px 0px 20px rgba(71, 40, 182, 0.226);
@@ -296,6 +296,56 @@ p {
     pointer-events: none;
 }
 /* End Scroll to top Style */
+/* AstronautThinking style start  */
+.astronaut_thinking {
+    z-index: -1;
+    position: fixed;
+    height: 18rem;
+    width: 18rem;
+    left: 2rem;
+    bottom: 1rem;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.astronaut_thinking img {
+    pointer-events: none;
+}
+.astronaut_Floating1 {
+    z-index: -1;
+    position: fixed;
+    height: 20rem;
+    width: 20rem;
+    left: 0rem;
+    bottom: 1rem;
+    /* display: none; */
+    align-items: center;
+    justify-content: center;
+    transform: translateY(200px);
+}
+.astronaut_thinking img {
+    pointer-events: none;
+}
+/* End AstronautThinking styling  */
+/* Astronaut riding styling  */
+
+.astronaut_riding {
+    z-index: -1;
+    position: fixed;
+    height: 18rem;
+    width: 18rem;
+    left: 30%;
+    bottom: 10%;
+    /* display: none; */
+    align-items: center;
+    justify-content: center;
+    transform: translateY(200px) translateX(-300px);
+}
+.astronaut_riding img {
+    pointer-events: none;
+    object-fit: contain;
+}
+/* End Astronaut riding styling  */
 /* Sun beam style start */
 
 .sun-beam {
@@ -481,11 +531,17 @@ p {
     left: calc(50% - 4rem / 2);
     transform: rotate(-200deg) translateX(180px);
 }
-.rocket {
+.rocket1 {
     position: absolute;
-    right: 0;
-    top: 0;
+    right: 50%;
+    /* width: 1rem; */
+    /* height: 1rem; */
+    top: 50%;
+    top: calc(50% - 4rem / 2);
+    left: calc(50% - 4rem / 2);
+    transform: rotate(-80deg) translateX(55px);
 }
+
 .mars {
     z-index: -1;
     position: fixed;
@@ -495,6 +551,15 @@ p {
     left: calc(50% - 2rem / 2);
     transform: rotate(90deg) translateX(220px);
 }
+/* .rocket3 {
+    z-index: -1;
+    position: fixed;
+    height: 8rem;
+    width: 8rem;
+    top: calc(50% - 8rem / 2);
+    left: calc(50% - 8rem / 2);
+    transform: rotate(180deg) translateX(450px);
+} */
 .jupiter {
     z-index: -1;
     position: fixed;
@@ -513,7 +578,13 @@ p {
     left: calc(50% - 9.62rem / 2);
     transform: rotate(-180deg) translateX(400px);
 }
+.rocket2 {
+    position: absolute;
+    top: calc(50%);
+    left: calc(50%);
 
+    transform: rotate(-80deg) translateX(70px);
+}
 .neptune {
     z-index: -1;
     position: fixed;
@@ -555,7 +626,7 @@ p {
     color: var(--primary-color);
     letter-spacing: 0.3rem;
     font-family: "Montserrat";
-    -webkit-text-stroke: 0.05rem rgba(255, 255, 255, 0.5);
+    /* -webkit-text-stroke: 0.05rem rgba(255, 255, 255, 0.5); */
     /* -webkit-text-stroke: 0.05rem rgba(0, 0, 0, 1); */
 }
 #hero .left .heading {
@@ -578,6 +649,8 @@ p {
     width: 100%;
     max-width: 450px;
     height: 600px;
+    height: 500px;
+    /* background-color: red; */
     object-fit: cover;
     object-position: 50% 30%;
 }
@@ -655,7 +728,7 @@ p {
     background-color: rgba(0, 255, 115, 0.151);
 }
 #services .item:nth-child(3):hover {
-    background-color: #cbbef093;
+    background-color: #af0e0ea4;
 }
 
 #services .item-heading {
@@ -761,10 +834,13 @@ p {
     left: 0;
     top: 45px;
     z-index: -1;
-    box-shadow: 0px 0px 20px #24105aa2;
-    box-shadow: 0px 0px 20px 10px #140a2edc;
-    border: 2px solid rebeccapurple;
-    background-color: rgba(0, 0, 0, 0.349);
+    /* box-shadow: 0px 0px 20px #24105aa2; */
+    /* box-shadow: 0px 0px 20px 10px #140a2edc; */
+    /* border: 2px solid rebeccapurple; */
+    /* background-color: rgba(0, 0, 0, 0.349); */
+
+    box-shadow: 0 0 10px #05b6fcaf;
+    background-color: rgba(0, 0, 0, 0.4);
 
     /* border-radius: 20px; */
 }
