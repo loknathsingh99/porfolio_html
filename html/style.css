@@ -193,7 +193,7 @@ p {
     display: inline-block;
     color: white;
     width: 100%;
-    font-size: 5rem;
+    font-size: 4rem;
     position: relative;
     font-family: "Montserrat", sans-serif;
 }
@@ -1179,11 +1179,21 @@ p {
 #contact {
     padding: 10rem 0;
 }
+
 #contact .wrapper {
     display: flex;
     align-items: flex-start;
     justify-content: center;
     gap: 5rem;
+}
+#background {
+    padding: 10rem 0;
+    /* width: 100%; */
+    /* max-width: 1000px; */
+}
+#background .container {
+    height: 1000vh;
+    /* height: 6vh; */
 }
 #contact .wrapper .left {
     flex: 1;
