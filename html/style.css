@@ -6,8 +6,8 @@
     --secondary-black: #0d081a;
     --secondary-gray: #48464b;
     --body-bg: #efebfa;
-    --primary-white: rgb(255, 238, 238);
-    --seconday-white: rgb(230, 229, 178);
+    --primary-white: rgb(238, 250, 255);
+    --secondary-white: rgb(230, 229, 178);
 }
 
 /* Global styles */
@@ -27,7 +27,7 @@ html {
 body {
     /* background-color: var(--body-bg);
     background-color: var(--secondary-black); */
-    background: url("./images/universe.jpg") no-repeat center center fixed;
+    background: url("./images/universe.jpg") no-repeat center fixed;
     /* background: linear-gradient(
             #12263f,
             #1f123f,
@@ -57,7 +57,8 @@ section {
 p {
     font-size: 1.6rem;
     color: var(--secondary-black);
-    color: var(--seconday-white);
+    color: var(--secondary-white);
+    color: wheat;
 }
 .container {
     width: 90%;
@@ -546,7 +547,7 @@ p {
 #hero .left .subheading {
     font-size: 1.8rem;
     font-size: 2rem;
-    font-weight: 500;
+    font-weight: 800;
     text-transform: uppercase;
     color: var(--primary-color);
 }
@@ -554,10 +555,12 @@ p {
     font-size: 6rem;
     font-family: "Montserrat", sans-serif;
     font-weight: 900;
+    color: white;
 }
 #hero .left .description {
     margin-top: 2.5rem;
     max-width: 400px;
+    font-size: 1.8rem;
 }
 #hero .right {
     text-align: right;
@@ -650,12 +653,14 @@ p {
 
 #services .item-heading {
     font-size: 2rem;
-    font-weight: 500;
+    font-weight: 600;
     font-family: "Poppins", sans-serif;
     margin-bottom: 1.5rem;
+    color: white;
 }
 #services .item .item-description {
-    color: var(--secondary-gray);
+    color: var(--secondary-white);
+    color: wheat;
 }
 /* #services .icon svg { */
 #services .icon {
@@ -713,9 +718,9 @@ p {
     overflow-x: hidden;
     /* border: 1px solid saddlebrown; */
 }
-#testimonial .section-heading {
-    /* border: 1px solid seagreen; */
-}
+/* #testimonial .section-heading {
+    border: 1px solid seagreen;
+} */
 #testimonial .all-items {
     /* border: 1px solid cadetblue; */
     display: flex;
@@ -781,14 +786,16 @@ p {
     text-transform: uppercase;
     font-family: "Montserrat", sans-serif;
     margin-bottom: 0.5rem;
+    color: white;
 }
 #testimonial .testimonial-subheading {
     font-size: 1.6rem;
     margin-bottom: 1rem;
-    color: var(--secondary-gray);
+    color: var(--secondary-white);
 }
 #testimonial .testimonial-description {
     color: var(--secondary-gray);
+    color: wheat;
 }
 
 #testimonial .icon {
@@ -843,10 +850,13 @@ p {
     font-family: "Poppins", sans-serif;
     /* font-weight: 600; */
     /* margin: 1rem 0 1rem 0; */
+    color: white;
 }
+
 #stats .stats-sub-heading {
     font-size: 2rem;
     margin-bottom: 2rem;
+    color: white;
 }
 #stats .all-items .item:nth-child(1) {
     background-color: rgba(255, 238, 0, 0.322);
@@ -896,7 +906,8 @@ p {
     /* background-color: red; */
 }
 #about .left .card {
-    box-shadow: 0 0 20px #4705fc33;
+    box-shadow: 0 0 10px #05b6fcaf;
+    background-color: rgba(0, 0, 0, 0.4);
     padding: 3rem;
     border-radius: 12px;
     min-height: 400px;
@@ -906,7 +917,12 @@ p {
 }
 #about .wrapper .right {
     flex: 10;
-    /* background-color: rebeccapurple; */
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.9);
+    box-shadow: 0px 0px 15px #05b6fcaf;
+    background-color: rgba(0, 0, 0, 0.8);
+    /* background-color: black; */
 }
 #about .card .img {
     width: 70px;
@@ -921,11 +937,12 @@ p {
 }
 #about .card .card-desc {
     margin-bottom: 2rem;
-    color: var(--secondary-gray);
+    color: var(--secondary-white);
 }
 #about .card .card-name {
     font-size: 2rem;
     margin-bottom: 0.2rem;
+    color: white;
 }
 #about .card .card-sub-title {
     font-size: 1.4rem;
@@ -933,13 +950,15 @@ p {
 #about .right .subheading {
     color: var(--primary-color);
     margin-bottom: 1rem;
+    font-weight: 800;
+    font-size: 1.8rem;
 }
 #about .right .slogan {
     font-size: 2.5rem;
     margin-bottom: 2rem;
 }
 #about .right .right-text {
-    color: var(--secondary-gray);
+    color: var(--secondary-white);
 }
 @media only screen and (max-width: 768px) {
     #about .wrapper {
