@@ -20,19 +20,19 @@ const rocket = document.querySelector(".rocket");
 
 if (scrollButton) {
     window.addEventListener("scroll", () => {
-        // if (pageYOffset > window.innerHeight * 1.2) {
-        //     scrollButton.style.display = "flex";
-        // } else {
-        //     scrollButton.style.display = "none";
-        // }
+        if (pageYOffset > window.innerHeight * 1.2) {
+            scrollButton.style.display = "flex";
+        } else {
+            scrollButton.style.display = "none";
+        }
         // console.log("y:", pageYOffset);
         // transform: skew(350deg, 354deg);
-        let t1 = pageYOffset * 0.05454;
-        let s1 = "rotate(-" + t1 + "deg)";
-        let t2 = 1 + pageYOffset * 0.0001515;
-        let s2 = "scale(" + t2 + ")";
-        let s3 = s1 + " " + s2;
-        scrollButton.style.transform = s3;
+        // let t1 = pageYOffset * 0.05454;
+        // let s1 = "rotate(-" + t1 + "deg)";
+        // let t2 = 1 + pageYOffset * 0.0001515;
+        // let s2 = "scale(" + t2 + ")";
+        // let s3 = s1 + " " + s2;
+        // scrollButton.style.transform = s3;
         // scrollButton.style.transform = s2;
         // console.log(s2);
     });
