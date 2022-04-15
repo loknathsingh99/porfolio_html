@@ -164,7 +164,7 @@ p {
     color: white;
     overflow: hidden;
     transform: translateX(100%);
-    transition: 1s ease transform;
+    transition: 0.5s ease transform;
 }
 #nav-content.show {
     transform: translateX(0);
@@ -223,6 +223,7 @@ p {
     position: absolute;
     left: 10px;
     top: 10px;
+    color: rgb(180, 156, 156);
     color: white;
     width: 30px;
     height: 30px;
@@ -783,6 +784,62 @@ p {
 /* #services .item:nth-child(1) .icon { */
 /* background-color: white; */
 /* } */
+#services .skill-heading {
+    color: white;
+    text-align: center;
+    font-size: clamp(2rem, 10vw, 5rem);
+    /* text-transform: uppercase; */
+    margin: 0 auto;
+    margin-top: 10rem;
+}
+#services .skills {
+    margin-top: 4rem;
+    /* border: 1px solid white; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+#services .skills .skill {
+    /* width: 5rem; */
+    min-height: 110px;
+    min-width: 140px;
+    /* width: 100%; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: center;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    /* border: 1px solid firebrick; */
+    border-radius: 8px;
+    /* background-color: white; */
+    color: var(--primary-color);
+    color: white;
+    background-color: rgba(255, 255, 255, 0.938);
+    background-color: rgba(0, 0, 0, 0.438);
+    font-size: 1.5rem;
+    /* font-family: "Poppins", sans-serif; */
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px #05b6fcaf;
+}
+#services .skills .skill:hover {
+    background-color: rgba(255, 255, 255, 0.99);
+    color: var(--primary-color);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+#services .skills .skill img {
+    height: 70px;
+    /* width: 100%; */
+    object-fit: contain;
+    /* object-fit: cover; */
+    /* border: 1px solid red; */
+}
 
 @media only screen and (max-width: 768px) {
     #services {
