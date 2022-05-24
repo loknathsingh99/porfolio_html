@@ -1605,6 +1605,16 @@ p {
     background-color: #155e80f1;
     color: white;
     padding: 10rem 0 5rem 0;
+    display: flex;
+    flex-direction: column;
+}
+#footer .thankyou {
+    text-align: center;
+    font-size: 2.3rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+    margin-bottom: 4rem;
+    margin-top: -5rem;
 }
 #footer footer {
     display: flex;
