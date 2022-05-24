@@ -7,7 +7,7 @@ const closeNavBtn = document.querySelector("#nav-content .close-btn");
 const navLinks = document.querySelectorAll("#nav-content nav ul li a");
 
 const scrollButton = document.querySelector(".scroll-top");
-const sunBeam = document.querySelector(".sun-beam");
+// const sunBeam = document.querySelector(".sun-beam");
 const mercury = document.querySelector(".mercury");
 const venus = document.querySelector(".venus");
 const earth = document.querySelector(".earth");
@@ -52,20 +52,19 @@ if (scrollButton) {
         window.scrollTo(0, 0);
     });
 }
-if (sunBeam) {
-    window.addEventListener("scroll", () => {
-        let t1 = pageYOffset * 0.013636;
-        let s1 = "rotate(" + t1 + "deg)";
-        sunBeam.style.transform = s1;
-        sunBeam.style.transformOrigin = "top center";
-    });
-}
+// if (sunBeam) {
+//     window.addEventListener("scroll", () => {
+//         let t1 = pageYOffset * 0.013636;
+//         let s1 = "rotate(" + t1 + "deg)";
+//         sunBeam.style.transform = s1;
+//         sunBeam.style.transformOrigin = "top center";
+//     });
+// }
 if (mercury) {
     window.addEventListener("scroll", () => {
         let t1 = pageYOffset * 0.6 - 150;
         let s1 = "rotate(" + t1 + "deg) translateX(80px)";
         mercury.style.transform = s1;
-        // sunBeam.style.transformOrigin = "top center";
     });
 }
 if (venus) {
@@ -73,7 +72,6 @@ if (venus) {
         let t1 = pageYOffset * 0.2 - 180;
         let s1 = "rotate(" + t1 + "deg) translateX(120px)";
         venus.style.transform = s1;
-        // sunBeam.style.transformOrigin = "top center";
     });
 }
 if (earth) {
@@ -92,7 +90,6 @@ if (mars) {
         let t1 = pageYOffset * 0.0969 + 90;
         let s1 = "rotate(" + t1 + "deg) translateX(220px)";
         mars.style.transform = s1;
-        // sunBeam.style.transformOrigin = "top center";
     });
 }
 if (jupiter) {
