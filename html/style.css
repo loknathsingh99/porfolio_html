@@ -1107,6 +1107,9 @@ p {
 #testimonial .testimonial-description {
     color: var(--secondary-gray);
     color: wheat;
+
+    /* for trail purpose */
+    font-size: 1.5rem;
     /* border: 1px solid red; */
 }
 #testimonial .testimonial-description .more {
