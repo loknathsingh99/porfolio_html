@@ -4,6 +4,10 @@ const navContent = document.querySelector("#nav-content");
 
 const closeNavBtn = document.querySelector("#nav-content .close-btn");
 
+const expand = document.querySelector(".expand");
+const collapse = document.querySelector(".collapse");
+const more_reviews = document.querySelector(".more_reviews");
+
 const navLinks = document.querySelectorAll("#nav-content nav ul li a");
 
 const scrollButton = document.querySelector(".scroll-top");
@@ -50,6 +54,20 @@ if (scrollButton) {
 
     scrollButton.addEventListener("click", () => {
         window.scrollTo(0, 0);
+    });
+}
+if (expand) {
+    expand.addEventListener("click", () => {
+        more_reviews.style.display = "flex";
+        expand.style.display = "none";
+        collapse.style.display = "inline";
+    });
+}
+if (collapse) {
+    collapse.addEventListener("click", () => {
+        more_reviews.style.display = "none";
+        expand.style.display = "inline";
+        collapse.style.display = "none";
     });
 }
 // if (sunBeam) {
@@ -158,3 +176,54 @@ navLinks.forEach((link) => {
         document.body.style.overflow = "initial";
     });
 });
+
+function readMore(n) {
+    // console.log(n);
+    const dots = document.querySelector(".item_" + n + " .dots");
+    const more = document.querySelector(".item_" + n + " .more");
+    const btn = document.querySelector(".item_" + n + " .readmore");
+    // const s = ".item_" + n + " ::after";
+    // console.log(s);
+    const review_item = document.querySelector("#testimonial .item_" + n);
+    if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btn.innerHTML = "Read more";
+        more.style.display = "none";
+        review_item.classList.remove("item_plane");
+    } else {
+        review_item.classList.add("item_plane");
+
+        dots.style.display = "none";
+        btn.innerHTML = "Read less";
+        more.style.display = "inline";
+    }
+
+    // #testimonial .item:nth-child(even)::after {
+    //     transform: skew(350deg, 354deg);
+    //     border-radius: 26px 67px 35px 67px;
+    //     height: 100%;
+    // }
+}
+// var dotss = document.querySelectorAll(".dots");
+// var moress = document.querySelectorAll(".more");
+// var btns = document.querySelectorAll(".readmore");
+
+// for (var i = 0; i < btns.length; i++) {
+//     console.log(i);
+//     btns[i].addEventListener("click", async () => {
+// if (dotss[i].style.display === "none") {
+//     dotss[i].style.display = "inline";
+//     btns[i].innerHTML = "Read more";
+//     moress[i].style.display = "none";
+// } else {
+//     dotss[i].style.display = "none";
+//     btns[i].innerHTML = "Read less";
+//     moress[i].style.display = "inline";
+// }
+//         await alert("hi " + i);
+//         var more = await document.querySelector(".item_" + i + " .more");
+//         if (more.style.display === "inline") {
+//             more.style.display = "none";
+//         } else more.style.display = "inline";
+//     });
+// }
