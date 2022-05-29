@@ -1287,6 +1287,8 @@ p {
 #about .card .card-desc {
     margin-bottom: 2rem;
     color: var(--secondary-white);
+    /* for trail purpose */
+    font-size: 1.6rem;
 }
 #about .card .card-name {
     font-size: 2rem;
@@ -1308,6 +1310,8 @@ p {
 }
 #about .right .right-text {
     color: var(--secondary-white);
+    /* for trail */
+    font-size: 1.6rem;
 }
 @media only screen and (max-width: 768px) {
     #about .wrapper {
@@ -1318,10 +1322,10 @@ p {
         /* background-color: darkblue; */
         /* height: fit-content; */
     }
-    #about .wrapper .left .card {
-        /* background-color: red; */
-        /* height: fit-content; */
-    }
+    /* #about .wrapper .left .card { */
+    /* background-color: red; */
+    /* height: fit-content; */
+    /* } */
     #about .right .buttons {
         flex-direction: column;
     }
