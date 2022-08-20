@@ -268,7 +268,7 @@ p {
     display: inline-block;
     color: white;
     width: 100%;
-    font-size: 4rem;
+    font-size: 2.5rem;
     position: relative;
     font-family: "Montserrat", sans-serif;
 }
@@ -327,7 +327,7 @@ p {
     }
     #nav-content .section-heading {
         text-align: right;
-        margin-bottom: 5rem;
+        margin-bottom: 4rem;
     }
     #nav-content .section-heading::before {
         text-align: right;
@@ -1625,7 +1625,7 @@ p {
     background-color: var(--primary-color);
     margin: 0 auto;
     max-width: 500px;
-    padding: 5rem;
+    padding: 3.5rem;
     border-radius: 12px;
     color: white;
 }
@@ -1667,7 +1667,7 @@ p {
 }
 #contact .right .form-group textarea {
     width: 100%;
-    height: 250px;
+    height: 100px;
     resize: vertical;
     outline: none;
     padding: 1rem;
@@ -1687,7 +1687,7 @@ p {
     font-family: "Roboto mono", sans-serif;
     letter-spacing: 0.3rem;
     /* font-weight: 300; */
-    width: 15rem;
+    width: 13rem;
     cursor: pointer;
 }
 
