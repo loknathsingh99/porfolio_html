@@ -1,284 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Contact</title>
-        <link rel="stylesheet" href="./style.css" />
-    </head>
-    <body>
-        <script
-            type="module"
-            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-        ></script>
-        <script
-            nomodule
-            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-        ></script>
-        <!--Navigation section start-->
-        <section id="navigation">
-            <div class="nav-icon">
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-6 w-6"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    stroke-width="1"
-                >
-                    <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M4 6h16M4 12h16M4 18h16"
-                    />
-                </svg>
-            </div>
-        </section>
-        <section id="nav-content">
-            <div class="close-btn">
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-6 w-6"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    stroke-width="2"
-                >
-                    <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M6 18L18 6M6 6l12 12"
-                    />
-                </svg>
-            </div>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!--Navigation section start-->
+    <section id="navigation">
+        <div class="nav-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="1">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </div>
+    </section>
+    <section id="nav-content">
+        <div class="close-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+        </div>
+        <div class="wrapper">
+            <h2 class="section-heading navigation-heading" data-outline="Menu">
+                Menu
+            </h2>
+            <nav>
+                <ul>
+                    <li><a data-text="HOME" href="./index.html#hero">Home</a></li>
+                    <li><a data-text="WHO AM I" href="./index.html#services">Who am I</a></li>
+                    <li><a data-text="ABOUT" href="./index.html#about">About</a></li>
+                    <li>
+                        <a data-text="PROJECTS" href="./index.html#projects">Project</a>
+                    </li>
+                    <li>
+                        <a data-text="ARTWORK" href="./index.html#artwork">Artwork</a>
+                    </li>
+                    <li>
+                        <a data-text="STUDENT FEEDBACK" href="./index.html#testimonial">Students Feedback</a>
+                    </li>
+                    <li>
+                    <li>
+                        <a data-text="BACKGROUND" href="./background.html#background">Show me Background</a>
+                    </li>
+                    <li>
+                        <a data-text="CONTACT" href="./contact.html#contact">Contact</a>
+                    </li>
+
+
+
+                </ul>
+            </nav>
+        </div>
+    </section>
+    <!--End Navigation section-->
+
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-heading" data-outline="Contact">Contact</h2>
             <div class="wrapper">
-                <h2
-                    class="section-heading navigation-heading"
-                    data-outline="Menu"
-                >
-                    Menu
-                </h2>
-                <nav>
-                    <ul>
-                        <li><a data-text="HOME" href="./index.html#hero">Home</a></li>
-                        <li><a data-text="WHO AM I" href="./index.html#services">Who am I</a></li>
-                        <li><a data-text="ABOUT" href="./index.html#about">About</a></li>
-                        <li>
-                            <a data-text="PROJECTS" href="./index.html#projects">Project</a>
-                        </li>
-                        <li>
-                            <a data-text="ARTWORK" href="./index.html#artwork">Artwork</a>
-                        </li>
-                        <li>
-                            <a data-text="STUDENT FEEDBACK" href="./index.html#testimonial">Students Feedback</a>
-                        </li>
-                        <li>
-                        <li>
-                            <a data-text="BACKGROUND" href="./background.html#background">Show me Background</a>
-                        </li>
-                        <li>
-                            <a data-text="CONTACT" href="./contact.html#contact">Contact</a>
-                        </li>
-
-
-                    
-                    </ul>
-                </nav>
-            </div>
-        </section>
-        <!--End Navigation section-->
-
-        <section id="contact">
-            <div class="container">
-                <h2 class="section-heading" data-outline="Contact">Contact</h2>
-                <div class="wrapper">
-                    <div class="left">
-                        <h2 class="contact-heading">Hire/Inquiry</h2>
-                        <p class="contact-desc">
-                            connect to me with these links or you can drop a
-                            message here.
-                        </p>
-                        <div class="contact-info">
-                            <ul>
-                                <li>
-                                    <a href="tel:+919981782556">
-                                        <span class="icon">
-                                            <svg
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                class="h-6 w-6"
-                                                fill="none"
-                                                viewBox="0 0 24 24"
-                                                stroke="currentColor"
-                                                stroke-width="2"
-                                            >
-                                                <path
-                                                    stroke-linecap="round"
-                                                    stroke-linejoin="round"
-                                                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-                                                />
-                                            </svg>
-                                        </span>
-                                        <span class="text">
-                                            +91-9981782556
-                                        </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="mailto:loknathsingh556@gmail.com">
-                                        <span class="icon">
-                                            <svg
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                class="h-6 w-6"
-                                                fill="none"
-                                                viewBox="0 0 24 24"
-                                                stroke="currentColor"
-                                                stroke-width="2"
-                                            >
-                                                <path
-                                                    stroke-linecap="round"
-                                                    stroke-linejoin="round"
-                                                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                                                />
-                                            </svg>
-                                        </span>
-                                        <span class="text">
-                                            loknathsingh556@gmail.com
-                                        </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://goo.gl/maps/Az96fdRsLP8ub5ep8">
-                                        <span class="icon">
-                                            <svg
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                class="h-6 w-6"
-                                                fill="none"
-                                                viewBox="0 0 24 24"
-                                                stroke="currentColor"
-                                                stroke-width="2"
-                                            >
-                                                <path
-                                                    stroke-linecap="round"
-                                                    stroke-linejoin="round"
-                                                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-                                                />
-                                                <path
-                                                    stroke-linecap="round"
-                                                    stroke-linejoin="round"
-                                                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-                                                />
-                                            </svg>
-                                        </span>
-                                        <span class="text">
-                                            Sehore, Madhyapradesh
-                                        </span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="social-info">
-                            <ul>
-                                <li>
-                                    <a
-                                        href="https://www.linkedin.com/in/loknath-singh-a3529b194/"
-                                    >
-                                        <img
-                                            src="./images/linkedin.png"
-                                            alt="linkedin"
-                                        />
-                                    </a>
-                                </li>
-                                <li>
-                                    <a
-                                        href="https://instagram.com/lokibawa.in?igshid=YmMyMTA2M2Y="
-                                    >
-                                        <img
-                                            src="./images/instagram.png"
-                                            alt="instagram"
-                                        />
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://wa.me/9981782556">
-                                        <img
-                                            src="./images/whatsapp.png"
-                                            alt="instagram"
-                                        />
-                                    </a>
-                                </li>
-                                <!-- <li><a href="#">IG</a></li> -->
-                            </ul>
-                        </div>
+                <div class="left">
+                    <h2 class="contact-heading">Hire/Inquiry</h2>
+                    <p class="contact-desc">
+                        connect to me with these links or you can drop a
+                        message here.
+                    </p>
+                    <div class="contact-info">
+                        <ul>
+                            <li>
+                                <a href="tel:+919981782556">
+                                    <span class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                        </svg>
+                                    </span>
+                                    <span class="text">
+                                        +91-9981782556
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:loknathsingh556@gmail.com">
+                                    <span class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                        </svg>
+                                    </span>
+                                    <span class="text">
+                                        loknathsingh556@gmail.com
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://goo.gl/maps/Az96fdRsLP8ub5ep8">
+                                    <span class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                        </svg>
+                                    </span>
+                                    <span class="text">
+                                        Pune, Maharashtra
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="right">
-                        <div class="form-wrapper">
-                            <form action="https://formsubmit.co/a2b24d60b60cceb414aadd8591a2cdb2" method="POST" >
-                                <div class="form-group">
-                                    <label for="name">Your Name</label>
-                                    <div class="input-wrapper">
-                                        <span class="icon">
-                                            <ion-icon
-                                                name="person-outline"
-                                            ></ion-icon
-                                        ></span>
-                                        <input
-                                            type="text"
-                                            id="name"
-                                            name="name"
-                                            required
-                                        />
-                                        <!-- honey pot -->
-                                        <input type="text" name="_honey" style="display:none">
-                                        <input type="hidden" name="_captcha" value="false">
-                                        <input type="hidden" name="_next" value="https://loknathsingh.netlify.app/contact.html">
-                                    </div>
+                    <div class="social-info">
+                        <ul>
+                            <li>
+                                <a href="https://www.linkedin.com/in/loknath-singh/">
+                                    <img src="./images/linkedin.png" alt="linkedin" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://instagram.com/lokibawa.in?igshid=YmMyMTA2M2Y=">
+                                    <img src="./images/instagram.png" alt="instagram" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://wa.me/9981782556">
+                                    <img src="./images/whatsapp.png" alt="instagram" />
+                                </a>
+                            </li>
+                            <!-- <li><a href="#">IG</a></li> -->
+                        </ul>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="form-wrapper">
+                        <form action="https://formsubmit.co/a2b24d60b60cceb414aadd8591a2cdb2" method="POST">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <div class="input-wrapper">
+                                    <span class="icon">
+                                        <ion-icon name="person-outline"></ion-icon></span>
+                                    <input type="text" id="name" name="name" required />
+                                    <!-- honey pot -->
+                                    <input type="text" name="_honey" style="display:none">
+                                    <input type="hidden" name="_captcha" value="false">
+                                    <input type="hidden" name="_next"
+                                        value="https://loknathsingh.netlify.app/contact.html">
                                 </div>
-                                <div class="form-group">
-                                    <label for="email_or_phone">Your Email or Phone</label>
-                                    <div class="input-wrapper">
-                                        <span class="icon">
-                                            <ion-icon
-                                                name="mail-outline"
-                                            ></ion-icon
-                                        ></span>
-                                        <input
-                                            type="text"
-                                            id="name"
-                                            name="email_or_phone"
-                                            required
-                                        />
-                                    </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email_or_phone">Your Email or Phone</label>
+                                <div class="input-wrapper">
+                                    <span class="icon">
+                                        <ion-icon name="mail-outline"></ion-icon></span>
+                                    <input type="text" id="name" name="email_or_phone" required />
                                 </div>
-                                <div class="form-group">
-                                    <label for="message">Message</label>
-                                    <textarea
-                                        id="message"
-                                        type="text"
-                                        width="100%"
-                                        name="message"
-                                        required
-                                    ></textarea>
-                                </div>
-                                <button type="submit">SEND</button>
-                            </form>
-                        </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" type="text" width="100%" name="message" required></textarea>
+                            </div>
+                            <button type="submit">SEND</button>
+                        </form>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- footer section start  -->
+    <!-- footer section start  -->
 
-        <section id="footer">
-            <p class="thankyou">
-                Thank you for visiting, your visit made me smile 😄
-            </p>
-           
-            <div class="container">
-                <footer>
-                    <div class="col-1">
-                        <!-- <div class="logo">
+    <section id="footer">
+        <p class="thankyou">
+            Thank you for visiting, your visit made me smile 😄
+        </p>
+
+        <div class="container">
+            <footer>
+                <div class="col-1">
+                    <!-- <div class="logo">
                             <a href="#">
                                 <img
                                     src="./images/profile22.png"
@@ -286,134 +195,156 @@
                                 />
                             </a>
                         </div> -->
-                        <p>
-                            <!-- hitwebcounter Code START -->
-                            <p>This Portfolio has been visited by below a number of people.</p>
-                            <div class="webcounter">
-                                <a href="https://www.hitwebcounter.com" target="_blank">
-                                    <img src="https://hitwebcounter.com/counter/counter.php?page=7992882&style=0038&nbdigits=5&type=ip&initCount=0" title="Free Counter" Alt="web counter"   border="0" /></a>
-    
-                            </div>
-                        </p>
+                    <p>
+                        <!-- hitwebcounter Code START -->
+                    <p>This Portfolio has been visited by below a number of people.</p>
+                    <div class="webcounter">
+                        <a href="https://www.hitwebcounter.com" target="_blank">
+                            <img src="https://hitwebcounter.com/counter/counter.php?page=7992882&style=0038&nbdigits=5&type=ip&initCount=0"
+                                title="Free Counter" Alt="web counter" border="0" /></a>
+
+                    </div>
+                    </p>
                     </br>
-                        <p>This Portfolio is last updated at 20/08/2022</p>
-                        
-                    </div>
-                    <div class="col-2">
-                        <h2 class="column-heading">Important<br />Links</h2>
-                        <ul>
-                            <li>
-                                <a href="./index.html#hero">Home</a>
-                            </li>
-                            <li>
-                                <a href="./index.html#services"
-                                    >Who am I</a
-                                >
-                            </li>
-                            <li>
-                                <a href="./index.html#about">About</a>
-                            </li>
-                            <li>
-                                <a href="./index.html#projects">Projects</a>
-                            </li>
-                            <li>
-                                <a href="./index.html#artwork">Artwork</a>
-                            </li>
-                            <li>
-                                <a href="./index.html#testimonial">Students feedback </a>
-                            </li>
-                            <li>
-                                <a href="./background.html#background"
-                                    >Show me Background</a
-                                >
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-3">
-                        <h2 class="column-heading">Contact<br />Links</h2>
-                        <ul>
-                            <li>
-                                <a href="mailto:loknathsingh556@gmail.com"
-                                    >loknathsingh556@gmail.com</a
-                                >
-                            </li>
-                            <li>
-                                <a href="tel:+919981782556">+91-9981782556</a>
-                            </li>
-                            <li>
-                                <a href="./contact.html#contact">Contact page link</a>
-                            </li>
-                            <!-- <li>
+                    <p>This Portfolio is last updated at 20/08/2022</p>
+
+                </div>
+                <div class="col-2">
+                    <h2 class="column-heading">Important<br />Links</h2>
+                    <ul>
+                        <li>
+                            <a href="./index.html#hero">Home</a>
+                        </li>
+                        <li>
+                            <a href="./index.html#services">Who am I</a>
+                        </li>
+                        <li>
+                            <a href="./index.html#about">About</a>
+                        </li>
+                        <li>
+                            <a href="./index.html#projects">Projects</a>
+                        </li>
+                        <li>
+                            <a href="./index.html#artwork">Artwork</a>
+                        </li>
+                        <li>
+                            <a href="./index.html#testimonial">Students feedback </a>
+                        </li>
+                        <li>
+                            <a href="./background.html#background">Show me Background</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <h2 class="column-heading">Contact<br />Links</h2>
+                    <ul>
+                        <li>
+                            <a href="mailto:loknathsingh556@gmail.com">loknathsingh556@gmail.com</a>
+                        </li>
+                        <li>
+                            <a href="tel:+919981782556">+91-9981782556</a>
+                        </li>
+                        <li>
+                            <a href="./contact.html#contact">Contact page link</a>
+                        </li>
+                        <!-- <li>
                                 <a href="#">Indore Bhopal</a>
                             </li> -->
-                        </ul>
-                    </div>
-                    <div class="col-4">
-                        <h2 class="column-heading">Social<br />Links</h2>
-                        <ul>
-                            <li>
-                                <a href="https://www.linkedin.com/in/loknath-singh-a3529b194/">
-                                    <img src="./images/linkedin.png" alt="linkedin"/>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://instagram.com/lokibawa.in?igshid=YmMyMTA2M2Y=">
-                                    <img src="./images/instagram.png" alt="instagram"/>
-                                    
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://wa.me/9981782556">
-                                    <img src="./images/whatsapp.png" alt="instagram"/>
-                                    
-                                </a>
-                            </li>
-                            <!-- <li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <h2 class="column-heading">Social<br />Links</h2>
+                    <ul>
+                        <li>
+                            <a href="https://www.linkedin.com/in/loknath-singh-a3529b194/">
+                                <img src="./images/linkedin.png" alt="linkedin" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://instagram.com/lokibawa.in?igshid=YmMyMTA2M2Y=">
+                                <img src="./images/instagram.png" alt="instagram" />
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://wa.me/9981782556">
+                                <img src="./images/whatsapp.png" alt="instagram" />
+
+                            </a>
+                        </li>
+                        <!-- <li>
                                 <a href="#">IG</a>
                             </li> -->
-                        </ul>
-                    </div>
-                </footer>
-            </div>
-        </section>
-        <!-- End footer section-->
+                    </ul>
+                </div>
+            </footer>
+        </div>
+    </section>
+    <!-- End footer section-->
 
-        <section id="copyright">
-            <div class="container">
-                <p>&copy; Copyright 2022 Loki. All right reserved</p>
-                <a href="https://www.freepik.com/vectors/planet"
-                    >Planet vector created by freepik - www.freepik.com</a
-                >
-                <a href="https://www.freepik.com/vectors/planet-background"
-                    >Planet background vector created by freepik -
-                    www.freepik.com</a
-                >
-                <a
-                    href="https://www.flaticon.com/free-icons/devops"
-                    title="devops icons"
-                    >Devops icons created by Freepik - Flaticon</a
-                >
+    <section id="copyright">
+        <div class="container">
+            <p>&copy; Copyright 2022 Loki. All right reserved</p>
+            <a href="https://www.freepik.com/vectors/planet">Planet vector created by freepik - www.freepik.com</a>
+            <a href="https://www.freepik.com/vectors/planet-background">Planet background vector created by freepik -
+                www.freepik.com</a>
+            <a href="https://www.flaticon.com/free-icons/devops" title="devops icons">Devops icons created by Freepik -
+                Flaticon</a>
 
-                <a
-                    href="https://www.flaticon.com/free-icons/art-deco"
-                    title="art decó icons"
-                    >Art decó icons created by Smashicons - Flaticon</a
-                >
-                <a
-                    href="https://www.flaticon.com/free-icons/draw"
-                    title="draw icons"
-                    >Draw icons created by Freepik - Flaticon</a
-                >
-                <a target="_blank" href="https://icons8.com/icon/jD-fJzVguBmw/redux">Redux</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-                <a href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icons created by Freepik - Flaticon</a>
-                <a href="https://www.flaticon.com/free-icons/instagram" title="instagram icons">Instagram icons created by Pixel perfect - Flaticon</a>
-                <a href="https://www.flaticon.com/free-icons/whatsapp" title="whatsapp icons">Whatsapp icons created by Freepik - Flaticon</a>
-                <a href="https://www.flaticon.com/free-icons/rocket" title="rocket icons">Rocket icons created by Freepik - Flaticon</a>
+            <a href="https://www.flaticon.com/free-icons/art-deco" title="art decó icons">Art decó icons created by
+                Smashicons - Flaticon</a>
+            <a href="https://www.flaticon.com/free-icons/draw" title="draw icons">Draw icons created by Freepik -
+                Flaticon</a>
+            <a target="_blank" href="https://icons8.com/icon/jD-fJzVguBmw/redux">Redux</a> icon by <a target="_blank"
+                href="https://icons8.com">Icons8</a>
+            <a href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icons created by
+                Freepik - Flaticon</a>
+            <a href="https://www.flaticon.com/free-icons/instagram" title="instagram icons">Instagram icons created by
+                Pixel perfect - Flaticon</a>
+            <a href="https://www.flaticon.com/free-icons/whatsapp" title="whatsapp icons">Whatsapp icons created by
+                Freepik - Flaticon</a>
+            <a href="https://www.flaticon.com/free-icons/rocket" title="rocket icons">Rocket icons created by Freepik -
+                Flaticon</a>
+            <a target="_blank" href="https://icons8.com/icon/iGCCE2iEmh2u/ansible">Ansible</a> icon by <a
+                target="_blank" href="https://icons8.com">Icons8</a>
 
+            <a target="_blank" href="https://icons8.com/icon/cvzmaEA4kC0o/kubernetes">Kubernetes</a> icon by <a
+                target="_blank" href="https://icons8.com">Icons8</a>
 
-            </div>
-        </section>
+            <a target="_blank" href="https://icons8.com/icon/17847/red-hat">RHEL</a> icon by <a target="_blank"
+                href="https://icons8.com">Icons8</a>
 
-        <script src="./main.js"></script>
-    </body>
+            <a target="_blank" href="https://icons8.com/icon/WHRLQdbEXQ16/google-cloud">Google Cloud</a> icon by <a
+                target="_blank" href="https://icons8.com">Icons8</a>
+
+            <a target="_blank" href="https://icons8.com/icon/22813/docker">Docker</a> icon by <a target="_blank"
+                href="https://icons8.com">Icons8</a>
+
+            <a target="_blank" href="https://icons8.com/icon/9MJf0ngDwS8z/bash">Bash</a> icon by <a target="_blank"
+                href="https://icons8.com">Icons8</a>
+
+            <a target="_blank" href="https://icons8.com/icon/33039/amazon-web-services">Amazon Web Services</a> icon by
+            <a target="_blank" href="https://icons8.com">Icons8</a>
+
+            <a target="_blank" href="https://icons8.com/icon/13441/python">Python</a> icon by <a target="_blank"
+                href="https://icons8.com">Icons8</a>
+
+            <a target="_blank" href="https://icons8.com/icon/33039/amazon-web-services">AWS</a> icon by <a
+                target="_blank" href="https://icons8.com">Icons8</a>
+
+            <a target="_blank" href="https://icons8.com/icon/VoXRGxL3ekkk/amazon-web-services">AWS</a> icon by <a
+                target="_blank" href="https://icons8.com">Icons8</a>
+
+            <a target="_blank" href="https://icons8.com/icon/33039/amazon-web-services">AWS</a> icon by <a
+                target="_blank" href="https://icons8.com">Icons8</a>
+
+            <a target="_blank" href="https://icons8.com/icon/33039/amazon-web-services">AWS</a> icon by <a
+                target="_blank" href="https://icons8.com">Icons8</a>
+
+        </div>
+    </section>
+
+    <script src="./main.js"></script>
+</body>
+
 </html>
